@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #73bbff; color: #333; }
+        header { background-color: #4154fc; color: white; text-align: center; padding: 20px; }
+        header img { width: 70px; height: auto; margin-right: 5px; }
+        nav { display: flex; justify-content: center; background-color: #1400cc; padding: 10px; }
+        nav a { color: white; padding: 10px 20px; text-decoration: none; font-weight: bold; }
+        nav a:hover { background-color: #4154fc; border-radius: 5px; }
+        .container { max-width: 600px; margin: 20px auto; padding: 20px; background-color: white; border-radius: 8px; }
+        label, input, textarea, button { display: block; width: 100%; margin: 10px 0; }
+        button { background-color: #4154fc; color: white; padding: 10px; border: none; cursor: pointer; }
+        button:hover { background-color: #283dfd; }
+        footer { background-color: #1400cc; color: white; text-align: center; padding: 10px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="images/Global_Sales_Consultancy.png" alt="Global Sales Consultancy Logo">
+        <h1>Contact Us</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="request-form.html">Request Form</a>
+        <a href="escalation-procedure.html">Escalation Procedure</a>
+        <a href="troubleshooting.html">Troubleshooting</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <div class="container">
+        <div id="contact" class="container">
+            <h2>Contact</h2>
+            <p>Our support team is ready to assist you with any inquiries or issues you may have. Reach out to us using the information below, and one of our specialists will be happy to help.</p>
+            <p><strong>Email:</strong> support@professionaltech.com</p>
+            <p><strong>Phone:</strong> +1-800-555-TECH (8324)</p>
+            <p>For further information or specific inquiries, please don't hesitate to contact us. We’re here to provide you with the best solutions.</p>
+        </div>
+        <h2>Get in Touch</h2>
+        <p>If you have any questions, need assistance, or would like to provide feedback, feel free to reach out to us using the form below.</p>  
+        <form>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Tech Support Services | All rights reserved</p>
+    </footer>
+</body>
+</html>

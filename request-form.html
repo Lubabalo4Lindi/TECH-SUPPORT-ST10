@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Support</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f0f4c3; color: #333; }
+        header { background-color: #558b2f; color: white; text-align: center; padding: 20px; }
+        header img { width: 70px; height: auto; margin-right: 5px; }
+        nav { display: flex; justify-content: center; background-color: #33691e; padding: 10px; }
+        nav a { color: white; padding: 10px 20px; text-decoration: none; font-weight: bold; }
+        nav a:hover { background-color: #7cb342; border-radius: 5px; }
+        .container { max-width: 600px; margin: 20px auto; padding: 20px; background-color: white; border-radius: 8px; }
+        label, input, textarea, button { display: block; width: 100%; margin: 10px 0; }
+        button { background-color: #558b2f; color: white; padding: 10px; border: none; cursor: pointer; }
+        button:hover { background-color: #33691e; }
+        footer { background-color: #33691e; color: white; text-align: center; padding: 10px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="images/Global_Sales_Consultancy.png" alt="Global Sales Consultancy Logo">
+        <h1>Submit a Support Request</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="request-form.html">Request Support</a>
+        <a href="escalation-procedure.html">Escalation Procedure</a>
+        <a href="troubleshooting.html">Troubleshooting</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <div class="container">
+        <h2>Request Form</h2>
+        <form>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" placeholder="Your Phone Number" required>
+            <label for="issue">Issue Description:</label>
+            <textarea id="issue" name="issue" rows="5" required></textarea>
+            <label for="priority">Priority Level:</label>
+            <select id="priority" name="priority" required>
+                <option value="" disabled selected>Select Priority Level</option>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+                <option value="urgent">Urgent</option>
+            </select>
+            <label for="device-id">Device ID or Serial Number (if applicable):</label>
+            <input type="text" id="device-id" name="device-id" placeholder="Device ID or Serial Number">
+            <label for="steps-taken">Steps Taken to Resolve:</label>
+            <textarea id="steps-taken" name="steps-taken" rows="4" placeholder="Describe any steps you've already taken to try to resolve the issue"></textarea>
+            <label for="attachment">Attach Screenshot or Log File (optional):</label>
+            <input type="file" id="attachment" name="attachment" accept=".jpg, .jpeg, .png, .pdf, .log">
+            <button type="submit">Submit Request</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Tech Support Services | All rights reserved</p>
+    </footer>
+
+</body>
+</html>
